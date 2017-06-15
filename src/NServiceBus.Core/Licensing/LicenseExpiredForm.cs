@@ -1,4 +1,5 @@
-﻿namespace NServiceBus
+﻿#if NET452
+namespace NServiceBus
 {
     using System;
     using System.Diagnostics;
@@ -140,3 +141,4 @@ When you receive your new license file, save it to disk and click the 'Browse' b
         static ILog Logger = LogManager.GetLogger<LicenseExpiredForm>();
     }
 }
+#endif
